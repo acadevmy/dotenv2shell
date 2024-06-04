@@ -1,0 +1,5 @@
+bin
+package.json
+./node_modules/
+.vscode
+.idea
