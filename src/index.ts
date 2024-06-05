@@ -42,16 +42,17 @@ const dotenvRun = env({
   files: argv.files,
   dotenv: {
     override: argv.override,
-    DOTENV_KEY: argv.dotenv_key,
+    DOTENV_KEY: argv.dotenv_key ?? process.env['DOTENV_KEY'],
   },
 });
 
-const exportStatements = Object.entries(dotenvRun.raw)
-  .map(([key, value]) => {
-    value = JSON.stringify(value).replaceAll(/\r\n|\r|\n/g, '\n');
+const exportStatements =
+  Object.entries(dotenvRun.raw)
+    .map(([key, value]) => {
+      value = JSON.stringify(value).replaceAll(/\r\n|\r|\n/g, '\n');
 
-    return `export ${key}=${value}`;
-  })
-  .join('\n');
+      return `export ${key}=${value}`;
+    })
+    .join('\n') + '\n';
 
 process.stdout.write(exportStatements);
