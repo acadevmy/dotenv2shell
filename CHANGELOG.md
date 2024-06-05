@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/acadevmy/dotenv2shell/compare/v1.0.2...v1.0.3) (2024-06-05)
+
+
+### Bug Fixes
+
+* fixed options ([4211431](https://github.com/acadevmy/dotenv2shell/commit/421143199fb77e48bb4b2860935cf7ecae513a93))
+
 ## [1.0.2](https://github.com/acadevmy/dotenv2shell/compare/v1.0.1...v1.0.2) (2024-06-05)
 
 
