@@ -18,10 +18,12 @@ npx @devmy/dotenv2shell [options]
 ### Options
 
 * `-o, --override`: Override existing environment variables on your machine with values from the `.env` file (default: false).
+* `-e, --environment`: Environment to load (`.env.{environment}`).
 * `-p, --prefix`: Prefix to filter environment variables to load (e.g., `MY_APP_`).
 * `-r, --root`: Root directory to search for the `.env` file (default: current working directory).
-* `-f, --files`: Comma-separated list of `.env` files to load (default: `.env`).
+* `-f, --files`: multi parameter of `.env` files to load (e.g., `-f .env -f .env.vault -f .env.local`, default: `['.env.vault', '.env']`).
 * `-d, --dotenv_key`: Manually specify the `DOTENV_KEY` for decryption (if using `.env.vault`).
+* `-c, --cwd`: Specify manually the cwd (Current Working Directory).
 
 ### Examples
 
