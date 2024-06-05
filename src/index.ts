@@ -4,35 +4,35 @@ import { hideBin } from 'yargs/helpers';
 
 const argv = await yargs(hideBin(process.argv))
   .option('override', {
-    alias: ['o', 'override'],
+    alias: ['o'],
     boolean: true,
     default: false,
     description:
       'Override any environment variables that have already been set on your machine with values from your .env file',
   })
   .option('prefix', {
-    alias: ['p', 'prefix'],
+    alias: ['p'],
     string: true,
     description: 'Prefix to filter environment variables',
   })
   .option('root', {
-    alias: ['r', 'root'],
+    alias: ['r'],
     string: true,
     description: 'Root directory to search for .env files',
   })
   .option('files', {
-    alias: ['f', 'files'],
+    alias: ['f'],
     string: true,
     array: true,
     description: '.env files to load',
   })
   .option('dotenv_key', {
-    alias: ['d', 'dotenv_key'],
+    alias: ['d'],
     string: true,
     description: 'Specify manually the DOTENV_KEY to decrypt .env.vault',
   })
   .option('cwd', {
-    alias: ['c', 'cwd'],
+    alias: ['c'],
     string: true,
     description: 'Specify manually the cwd (Current Working Directory)',
   })
