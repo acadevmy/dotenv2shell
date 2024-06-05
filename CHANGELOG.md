@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/acadevmy/dotenv2shell/compare/v1.0.4...v1.1.0) (2024-06-05)
+
+
+### Features
+
+* added variables and forced .env.vault as a default with .env ([b85524e](https://github.com/acadevmy/dotenv2shell/commit/b85524ec69e5d5c47cc85f708aceeda7cf329672))
+
 ## [1.0.4](https://github.com/acadevmy/dotenv2shell/compare/v1.0.3...v1.0.4) (2024-06-05)
 
 
