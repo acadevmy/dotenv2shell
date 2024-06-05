@@ -10,6 +10,11 @@ const argv = await yargs(hideBin(process.argv))
     description:
       'Override any environment variables that have already been set on your machine with values from your .env file',
   })
+  .option('environment', {
+    alias: ['e'],
+    string: true,
+    description: 'Environment to load',
+  })
   .option('prefix', {
     alias: ['p'],
     string: true,
@@ -42,10 +47,11 @@ const argv = await yargs(hideBin(process.argv))
 console.log = () => null;
 
 const dotenvRun = env({
+  environment: argv.environment,
   cwd: argv.cwd ?? process.cwd(),
   prefix: argv.prefix,
   root: argv.root,
-  files: argv.files,
+  files: argv.files ?? ['.env.vault', '.env'],
   dotenv: {
     override: argv.override,
     DOTENV_KEY: argv.dotenv_key ?? process.env['DOTENV_KEY'],
