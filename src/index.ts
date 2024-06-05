@@ -34,7 +34,7 @@ const argv = await yargs(hideBin(process.argv))
   .option('cwd', {
     alias: ['c', 'cwd'],
     string: true,
-    description: 'Specify manually the DOTENV_KEY to decrypt .env.vault',
+    description: 'Specify manually the cwd (Current Working Directory)',
   })
   .help().argv;
 
@@ -42,7 +42,7 @@ const argv = await yargs(hideBin(process.argv))
 console.log = () => null;
 
 const dotenvRun = env({
-  cwd: process.cwd(),
+  cwd: argv.cwd ?? process.cwd(),
   prefix: argv.prefix,
   root: argv.root,
   files: argv.files,
