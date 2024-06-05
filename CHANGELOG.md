@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/acadevmy/dotenv2shell/compare/v1.0.0...v1.0.1) (2024-06-05)
+
+
+### Bug Fixes
+
+* enforce DOTENV_KEY and cwd from process ([f172e4a](https://github.com/acadevmy/dotenv2shell/commit/f172e4a056a07b9066707308e6d56c37b4b3f4f5))
+
 # 1.0.0 (2024-06-04)
 
 
