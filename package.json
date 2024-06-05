@@ -1,6 +1,6 @@
 {
   "name": "@devmy/dotenv2shell",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI lets you easily load environment variables from a `.env` file into your current shell session. It provides flexibility through various options and supports both zsh and bash.",
   "main": "bin/index.mjs",
   "bin": "bin/index.mjs",
