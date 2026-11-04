@@ -9,6 +9,10 @@ This TypeScript CLI lets you easily load environment variables from a `.env` fil
 - ✅ Load priorities of .env.* files (e.g. .env.production > .env)
 - ✅ Hierarchical cascading configuration in monorepo projects (Nx, Turbo, etc.) apps/next-app/.env > apps/.env > .env
 
+## Requirements
+
+Node.js `>=22.12.0`.
+
 ## Usage
 
 ```bash

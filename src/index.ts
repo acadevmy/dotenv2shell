@@ -44,7 +44,8 @@ const argv = await yargs(hideBin(process.argv))
   .help().argv;
 
 // Kill all dotenv logs 🏴‍☠️
-console.log = () => null;
+// eslint-disable-next-line no-console
+console.log = (): null => null;
 
 const dotenvRun = env({
   environment: argv.environment,
