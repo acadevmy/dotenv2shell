@@ -1,0 +1,3 @@
+export PRESET="from-shell"
+export DOTENV_VAULT_DEVELOPMENT="AAECAwQFBgcICQoL10XPUVK4cU3ZmYxHSp3EsiehNMi6hUZpitDRjAifLV4OnsUyP/Sm01585N1XfnXsUhRr+SgAn9uZUXINPE4/uEDGMYov6S+cH6aEc+HCINRhhg=="
+export PLAIN_NEXT_TO_VAULT="ignored-when-vault-loads"

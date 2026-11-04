@@ -8,7 +8,8 @@
     "build": "tsup",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' --fix",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "test": "node --test test/*.test.mjs"
   },
   "keywords": [
     "dotenv",
