@@ -9,5 +9,5 @@ CONTRIBUTE.md
 renovate.json
 tsconfig.json
 /.vscode
-.eslintrc.json
-.eslintignore
+eslint.config.cjs
+test/

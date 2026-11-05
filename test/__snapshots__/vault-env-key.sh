@@ -1,0 +1,5 @@
+export PRESET="from-vault"
+export DOTENV_KEY="dotenv://:key_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@dotenv.org/vault/.env.vault?environment=development"
+export DOTENV_VAULT_DEVELOPMENT="AAECAwQFBgcICQoL10XPUVK4cU3ZmYxHSp3EsiehNMi6hUZpitDRjAifLV4OnsUyP/Sm01585N1XfnXsUhRr+SgAn9uZUXINPE4/uEDGMYov6S+cH6aEc+HCINRhhg=="
+export VAULT_SECRET="from vault"
+export VAULT_MULTILINE="a\nb"
