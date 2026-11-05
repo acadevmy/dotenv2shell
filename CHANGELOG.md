@@ -1,10 +1,3 @@
-## [1.1.1](https://github.com/acadevmy/[secure]2[secure]/compare/v1.1.0...v1.1.1) (2026-11-05)
-
-
-### Bug Fixes
-
-* **deps:** update dependencies and tooling ([483bb47](https://github.com/acadevmy/[secure]2[secure]/commit/483bb4793ee4b4edc6443aef01bae909128b5dbf))
-
 # [1.1.0](https://github.com/acadevmy/dotenv2shell/compare/v1.0.4...v1.1.0) (2024-06-05)
 
 
